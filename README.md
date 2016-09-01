@@ -4,7 +4,7 @@ This script runs a train (sl) from the right screen to the left screen. Assumes 
 The script requires the following programs:
 
 - sl
-- i3wm
+- i3wm (could possibly work with other tiling wm's)
 - dmenu
 - xdotool
 
@@ -16,9 +16,8 @@ How to run:
 
 Info:
 
-- Not very portable at the moment. Assumes you use i3wm, dmenu and two screen with a resolution of 1920x1080. Times set in the script are also based on this resolution.
+- Not very portable at the moment. Assumes you use i3wm, dmenu and two screens with a resolution of 1920x1080. Times set in the script are based on this resolution.
 - The script automatically runs `stty sane` to ensure a working terminal after script termination.
-- Works best with two screens of equal size.
 
 TODO:
 
