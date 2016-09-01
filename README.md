@@ -11,12 +11,17 @@ The script requires the following programs:
 How to run:
 
 1. Open a terminal on your right screen.
-2. Run script in terminal. You will have to close the terminal on the left screen if you want to rerun it. 
+2. Run script in terminal. 
+3. To repeat simply run the script again after the script has terminated. 
+
+Info:
+
+- Not very portable at the moment. Assumes you use i3wm, dmenu and two screen with a resolution of 1920x1080. Times set in the script are also based on this resolution.
+- The script automatically runs `stty sane` to ensure a working terminal after script termination.
+- Works best with two screens of equal size.
 
 TODO:
-- Not very portable at the moment. Assumes you use i3wm, dmenu and two screen with a resolution of 1920x1080.
-- After finishing running the script the terminal which started the script may require a reset of the terminal for it to function properly. `$ stty sane` is recommended.
-- Only works with two screens (or at least not tested with just one screen).
-- Cannot give sl any arguments to make things more interesting.
-- dmenu should not be necessary, but makes things easier.
-- Does not close down the terminal opened by the script after it is done. 
+
+- Enable sl to receive arguments.
+- dmenu should not be necessary for running the program.
+- i3wm should not be needed either, but a tiling wm makes things easier.
